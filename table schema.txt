@@ -1,0 +1,33 @@
+$conn->query('create database parking_lots');
+
+		$sql="CREATE TABLE Users (
+		id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+		name VARCHAR(30) NOT NULL,
+		email VARCHAR(50),
+		PasswordHash BINARY(64) NOT NULL,
+		vehicleno VARCHAR(20),
+		reg_date TIMESTAMP
+		)";
+
+		if ($conn->query($sql) === TRUE) {
+			echo "Table Users -created successfully";
+		} else {
+			echo "Error creating table: " . $conn->error;
+		}
+
+		$sql="insert into Users (firstname,lastname,email,PasswordHash)values('LOL','YES','sdbs@emaik.com','379389')";
+
+		$sql="CREATE TABLE Slots(
+		slotid VARCHAR(2) NOT NULL PRIMARY KEY,
+		status VARCHAR(10) check status in ('B','N'),
+		price CURRENCY,
+		)";
+		
+		$sql="CREATE TABLE Books(
+		date DATE,
+		stime TIME,
+		etime TIME,
+		id INT(6),
+		slotid VARCHAR(2),
+		FOREIGN KEY (id) references Users on delete cascade,
+		FOREIGN KEY (slotid) references Slots on delete cascade);
