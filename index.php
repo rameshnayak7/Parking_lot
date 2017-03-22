@@ -140,7 +140,7 @@ if(val==1)
 	 $('#button1').prop('disabled', true);
 
 }
-/*var val2="<?php echo $var1[1] ?>";
+var val2="<?php echo $var1[1] ?>";
 if(val2==1)
 {
 	 $('#button2').prop('disabled', true);
@@ -164,7 +164,7 @@ var val6="<?php echo $var1[5] ?>";
 if(val6==1)
 {
 	 $('#button6').prop('disabled', true);
-}*/
+}
 </script>
 <input type="submit" name="submit" value="Proceed" class="submit">
 <script type="text/javascript">
@@ -203,7 +203,7 @@ if(isset($_POST['submit'])&&isset($_POST['A1']))
 	$query2="UPDATE buttons SET status=1 where status=0 and name='A1'";
 	$result2=mysqli_query($connection,$query2);
 }
-/*if(isset($_POST['submit'])&&isset($_POST['A2']))
+if(isset($_POST['submit'])&&isset($_POST['A2']))
 {
 	$query3="UPDATE buttons SET status=1 where status=0 and name='A2'";
 	$result2=mysqli_query($connection,$query3);
@@ -232,7 +232,7 @@ if(isset($_POST['submit'])&&isset($_POST['A6']))
 	$query7="UPDATE buttons SET status=1 where status=0 and name='A6'";
 	$result2=mysqli_query($connection,$query7);
 
-}*/
+}
 ?>
 
 	</body>
