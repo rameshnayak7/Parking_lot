@@ -1,0 +1,164 @@
+.button {
+    background-color: white;
+    border-bottom: 2px ridge red;
+    border-right: 2px ridge red;
+	border-top:0px;
+	border-left:0px;
+	margin-right:20px;
+    color: black;
+    padding: 15px,32px,40px,40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+	cursor:pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: red; 
+    color: white;
+}
+.button:focus{
+	background-color:green;
+	color:white;
+}
+.disabled{
+	background-color: grey;
+	color:white;
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+.disabled:hover{
+	background-color: black;
+	color:white; 
+}
+
+.div1{
+	width:800px;
+	height:400px;
+	padding:20px;
+	border: 2px solid black;
+	text-align:center;
+	margin:auto;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	position:absolute;
+}
+.div2{
+	width:800px;
+	height:400px;
+	padding:20px;
+	/*border: 2px solid black;*/
+	text-align:center;
+	margin:auto;
+	top:650px;
+	bottom:0;
+	right:100;
+	left:250px;
+	position:absolute;
+}
+.verticaltext{
+	transform:rotate(90deg);
+	transform-origin:left top 0;
+	position:absolute;
+	top:300px;
+	left:1080px;
+	color:brown;
+	font-size:24px;
+}
+
+#ck-button {
+	background-color: white;
+    border-bottom: 2px ridge red;
+    border-right: 2px ridge red;
+	border-top:0px;
+	border-left:0px;
+	margin-right:20px;
+    color: black;
+    padding: 15px,32px,40px,40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+	cursor:pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#ck-button label {
+    float:left;
+    width:2.0em;
+    cursor:pointer;
+}
+
+#ck-button label span {
+    text-align:center;
+    padding:3px 0px;
+    display:block;
+    border-radius:0px;
+    top:650px;
+	bottom:0;
+	right:100;
+	left:250px;
+}
+
+#ck-button label input {
+    position:absolute;
+	top:-2000px
+}
+
+#ck-button input:hover + span {
+    background-color:red;
+}
+
+#ck-button input:checked + span {
+    background-color:green;
+    color:#fff;
+}
+
+#ck-button input:checked:hover + span {
+    background-color:#c11;
+    color:#fff;
+}
+
+#ck-button input:disabled +span{
+	background-color: grey;
+	color:black;
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+#ck-button input:disabled:hover + span{
+	background-color: black;
+	color:white; 
+}
+
+.submit{
+	top:600px;
+	left:1025px;
+	position: absolute;
+	cursor:pointer;
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 12px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #ff1a1a;
+	border: none;
+    border-radius: 10px;
+	box-shadow: 0 7px #999;
+}
+
+.submit:hover {background-color: #ff6666}
+
+.submit:active {
+  background-color:#800000 ;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
