@@ -125,7 +125,7 @@
 			  <label><b>Password</b></label>
 			  <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
 			  <input type='submit' name='Submit' value='login' class="button" />
-			  <button type='button' class='button' onclick="window.open('signup.php')">sign up</button>
+			  <button type='button' class='button' onclick="window.location.replace('signup.php')">sign up</button>
 			</div>
 	  </form>
 	</body>
