@@ -23,6 +23,11 @@
 			cursor: pointer;
 			width: 100%;
 		}
+			
+			
+			
+			
+			
 
 		/* Extra styles for the cancel button */
 		.cancelbtn {
